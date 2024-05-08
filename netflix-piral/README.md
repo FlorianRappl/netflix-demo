@@ -1,4 +1,4 @@
-# Netflix-piral: a Netflix clone using microfrontends
+# Netflix Piral: A Netflix Clone using Micro Frontends
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/b392f8ac-0ec3-44e8-bf19-1bfda4a7dfbd/deploy-status)](https://app.netlify.com/sites/netflix-piral/deploys)
 [![](https://img.shields.io/website?color=2b7489&style=flat-square&up_message=netflix.deruwe.me&url=https%3A%2F%2Fnetflix.deruwe.me)](https://netflix.deruwe.me)
@@ -26,7 +26,7 @@
     </span>
 </p>
 
-**Read more**:  In [this DEVCommunity article](https://dev.to/dantederuwe/my-experiences-creating-a-netflix-clone-using-microfrontends-1n46), I go over my experiences.
+**Read more**: In [this DEVCommunity article](https://dev.to/dantederuwe/my-experiences-creating-a-netflix-clone-using-microfrontends-1n46), I go over my experiences.
 
 [![](https://i.imgur.com/J63Qkfy.jpg)](https://netflix-piral.deruwe.me)
 
@@ -49,9 +49,9 @@ The user can switch accounts via the `Profile` option in the top right. All favo
 <img src="https://media.giphy.com/media/9S16de4Yb3kSi1HMLx/giphy.gif"/>
 <img src="https://media.giphy.com/media/rOa1PlSAnA4hgHV7z3/giphy.gif"/>
 
-## Microfrontends
+## Micro Frontends
 
-This project consists of multiple microfrondends (in the Piral framework called "pilets").
+This project consists of multiple micro frontends (in the Piral framework called "pilets").
 
 You can find the code for them here:
 

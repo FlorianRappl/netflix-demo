@@ -1,5 +1,5 @@
 import * as React from "react";
-import { render } from "react-dom";
+import { createRoot } from "react-dom/client";
 import { createInstance, Piral } from "piral-core";
 import { createMenuApi } from "piral-menu";
 import { home, layout, errors } from "./layout";
@@ -9,7 +9,7 @@ const instance = createInstance({
     components: layout,
     errorComponents: errors,
     routes: {
-      '/': home,
+      "/": home,
     },
   },
   plugins: [createMenuApi()],
@@ -20,4 +20,5 @@ const instance = createInstance({
   },
 });
 
-render(<Piral instance={instance} />, document.querySelector("#app"));
+const root = createRoot(document.querySelector("#app"));
+root.render(<Piral instance={instance} />);
