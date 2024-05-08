@@ -13,7 +13,7 @@ jobs:
       - name: Use Node.js
         uses: actions/setup-node@v1
         with:
-          node-version: "14.x"
+          node-version: "20.x"
           registry-url: "https://registry.npmjs.org"
       - name: Install Yarn and gh-pages
         run: |
@@ -22,7 +22,7 @@ jobs:
       - name: Install Dependencies
         run: |
           cd netflix-piral
-          npm i
+          npm i --force
           cd ..
       - name: Build App Shell
         run: |
@@ -31,13 +31,13 @@ jobs:
           echo "notflix-demo.samples.piral.cloud" > dist/release/CNAME
           cp dist/release/index.html dist/release/404.html
           cd ..
-      - name: Publish Emulator
-        run: |
-          cd netflix-piral
-          npm publish dist/emulator/*.tgz
-          cd ..
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NODE_AUTH_TOKEN }}
+      # - name: Publish Emulator
+      #   run: |
+      #     cd netflix-piral
+      #     npm publish dist/emulator/*.tgz
+      #     cd ..
+      #   env:
+      #     NODE_AUTH_TOKEN: ${{ secrets.NODE_AUTH_TOKEN }}
       - name: Deploy App Shell
         run: |
           git remote set-url origin https://git:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
@@ -54,12 +54,12 @@ jobs:
       - name: Use Node.js
         uses: actions/setup-node@v1
         with:
-          node-version: "14.x"
+          node-version: "20.x"
           registry-url: "https://registry.npmjs.org"
       - name: Install Dependencies
         run: |
           cd netflix-browse-pilet
-          npm i
+          npm i --force
           cd ..
       - name: Publish Pilet
         run: |
@@ -77,12 +77,12 @@ jobs:
       - name: Use Node.js
         uses: actions/setup-node@v1
         with:
-          node-version: "14.x"
+          node-version: "20.x"
           registry-url: "https://registry.npmjs.org"
       - name: Install Dependencies
         run: |
           cd netflix-favorites-pilet
-          npm i
+          npm i --force
           cd ..
       - name: Publish Pilet
         run: |
@@ -100,12 +100,12 @@ jobs:
       - name: Use Node.js
         uses: actions/setup-node@v1
         with:
-          node-version: "14.x"
+          node-version: "20.x"
           registry-url: "https://registry.npmjs.org"
       - name: Install Dependencies
         run: |
           cd netflix-profile-pilet
-          npm i
+          npm i --force
           cd ..
       - name: Publish Pilet
         run: |
@@ -123,12 +123,12 @@ jobs:
       - name: Use Node.js
         uses: actions/setup-node@v1
         with:
-          node-version: "14.x"
+          node-version: "20.x"
           registry-url: "https://registry.npmjs.org"
       - name: Install Dependencies
         run: |
           cd netflix-search-pilet
-          npm i
+          npm i --force
           cd ..
       - name: Publish Pilet
         run: |
@@ -146,12 +146,12 @@ jobs:
       - name: Use Node.js
         uses: actions/setup-node@v1
         with:
-          node-version: "14.x"
+          node-version: "20.x"
           registry-url: "https://registry.npmjs.org"
       - name: Install Dependencies
         run: |
           cd netflix-watch-pilet
-          npm i
+          npm i --force
           cd ..
       - name: Publish Pilet
         run: |

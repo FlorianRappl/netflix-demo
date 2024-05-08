@@ -1,0 +1,9 @@
+{
+  "$schema": "https://docs.piral.io/schemas/pilet-v0.json",
+  "schemaVersion": "v2",
+  "piralInstances": {
+    "@smapiot/netflix-piral-demo": {
+      "selected": true
+    }
+  }
+}

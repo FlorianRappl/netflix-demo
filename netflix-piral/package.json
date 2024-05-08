@@ -17,8 +17,8 @@
     "piral-menu": "1.5.4",
     "react": "^18",
     "react-dom": "^18",
-    "react-router": "^5",
-    "react-router-dom": "^5"
+    "react-router": "5.3.3",
+    "react-router-dom": "5.3.3"
   },
   "publishConfig": {
     "access": "public"
